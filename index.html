@@ -170,18 +170,7 @@ three-dimensional analysis of microorganisms. This advancement paves
 the way for enhanced visualization of cellular processes,
 developmental biology studies, and investigations into life mechanics
 at the microscopic level.<p>
-  
-        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/exp_rbc.jpg" alt="MY ALT TEXT" style="width: 2000px; height: auto;"/>
-        <h2 class="subtitle has-text-centered">
-          <p> Dynamic ST-FP imaging of red blood cells (RBCs). (a) Full FOV LR image captured under central LED illumination. 
-          (b) and (c) show the HR reconstructed amplitude and phase results, respectively, obtained from the standard FP algorithm 
-          when the sample is static. (d) and (f) The amplitude and phase results, respectively, using the conventional CS-FP method. 
-          (e) and (g) The temporal amplitude and phase results by ST-FP, demonstrating enhanced stability and image quality. 
-          <p>     
-        </h2>
-      </div>
+
   
         </div>
       </div>
@@ -190,7 +179,37 @@ at the microscopic level.<p>
 </section>
 <!-- End paper abstract -->
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Methodology</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+       
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/intro_v2.jpg" alt="MY ALT TEXT" style="width: 1500px; height: auto;"/>
+        <h2 class="subtitle has-text-centered">
+          <p>Principle of Space-time Fourier Ptychography (ST-FP).
+            (a) Schematic of ST-FP setup, including multiplexed LED illumination and the pathway through lenses to the sensor, 
+            captures the dynamics of living organisms. (b) To address rapid deformations between successive frames, a novel
+            reconstruction approach utilizes warping to approximate intermediate frame states. For each time stamp, 
+            raw data <b>b<sub>t</sub></b> is captured under multiplexed illumination. Utilizing motion fields <b>-v<sub>t-1</sub></b>
+            and <b>v<sub>t</sub></b>, backward and forward warping are applied to estimate <b>o<sub>t-1</sub></b> and <b>o<sub>t+1</sub></b>,
+            respectively. This approach effectively aggregates phase and amplitude information across time, 
+            resulting in increased reconstruction accuracy and resolution. This method aligns each captured raw frame with its temporal stamp, 
+            allowing for the reconstruction of objects even with significant motion, as opposed to the traditional scheme that requires negligible object movement.
+          </p>
 
+        </h2>
+      </div>
+       
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+  
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -209,7 +228,19 @@ at the microscopic level.<p>
           <p>     
         </h2>
       </div>
-        
+            
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/usaf_phase.jpg" alt="MY ALT TEXT" style="width: 1400px; height: auto;"/>
+        <h2 class="subtitle has-text-centered">
+         <p> Comparative analysis using moved pure phase USAF target. (a) Full FOV LR image of the target captured with a single LED.
+            (b) Zoomed ROI. (c) HR reconstruction of the target using the standard FP method. 
+            (d) The sequence of results under dynamic conditions by CS-FP. The line plots show the susceptibility to motion. 
+            (e) The sequence of images by ST-FP illustrates robust phase estimation with reduced variability in line plots.
+          <p> 
+       </h2>
+     </div>  
+            
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/usaf_amplitude.jpg" alt="MY ALT TEXT" style="width: 1400px; height: auto;"/>
@@ -222,18 +253,6 @@ at the microscopic level.<p>
         </h2>
       </div>
         
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/usaf_phase.jpg" alt="MY ALT TEXT" style="width: 1400px; height: auto;"/>
-        <h2 class="subtitle has-text-centered">
-         <p> Comparative analysis using moved pure phase USAF target. (a) Full FOV LR image of the target captured with a single LED.
-            (b) Zoomed ROI. (c) HR reconstruction of the target using the standard FP method. 
-            (d) The sequence of results under dynamic conditions by CS-FP. The line plots show the susceptibility to motion. 
-            (e) The sequence of images by ST-FP illustrates robust phase estimation with reduced variability in line plots.
-          <p> 
-       </h2>
-     </div>
-     
   </div>
 </div>
 </div>

@@ -115,6 +115,8 @@ body {
 }
 
 .results-carousel .item {
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
   margin: 5px;
   overflow: hidden;
   padding: 20px;

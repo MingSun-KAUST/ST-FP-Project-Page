@@ -115,12 +115,13 @@ body {
 }
 
 .results-carousel .item {
+  display: flex;            /* Ensures flexbox properties are applied */
   justify-content: center;  /* Center horizontally */
   align-items: center;      /* Center vertically */
   margin: 5px;
   overflow: hidden;
   padding: 20px;
-  font-size: 0;
+  font-size: 0;             /* Ensure this is needed, as it can hide text accidentally */
 }
 
 .results-carousel video {

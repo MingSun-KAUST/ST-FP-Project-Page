@@ -115,11 +115,10 @@ body {
 }
 
 .results-carousel .item {
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;  /* Ensure the item takes full width of its container */
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
 }
 
 .results-carousel video {

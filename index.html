@@ -428,5 +428,39 @@ at the microscopic level.<p>
 
     <!-- End of Statcounter Code -->
 
+<!-- Visitor Counter -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="visitor-counter">
+        <i class="fas fa-globe"></i>
+        <span id="visitor-count">Loading...</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Visitor Counter -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const visitorCountElement = document.getElementById('visitor-count');
+      
+      // Retrieve the current count from localStorage, or start at 1
+      let visitorCount = localStorage.getItem('visitorCount');
+      if (!visitorCount) {
+          visitorCount = 1;
+      } else {
+          visitorCount = parseInt(visitorCount) + 1;
+      }
+      
+      // Save the updated count back to localStorage
+      localStorage.setItem('visitorCount', visitorCount);
+      
+      // Update the visitor count element
+      visitorCountElement.textContent = visitorCount;
+  });
+</script>
+
+  
   </body>
   </html>
